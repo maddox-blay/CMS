@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.Signup">
+   <children>
+      <VBox alignment="CENTER" fillWidth="false" layoutX="76.0" layoutY="60.0" maxHeight="200.0" prefHeight="200.0" prefWidth="448.0" spacing="32.0" AnchorPane.bottomAnchor="60.0" AnchorPane.topAnchor="84.0">
+         <children>
+            <VBox spacing="8.0">
+               <children>
+                  <TextField fx:id="username" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="40.0" minWidth="-Infinity" prefWidth="448.0" promptText="Username" style="-fx-border-radius: 0; -fx-background-radius: 0;">
+                     <font>
+                        <Font name="Work Sans Medium" size="20.0" />
+                     </font>
+                  </TextField>
+                  <Label fx:id="existError" managed="false" text="User already exists" textFill="#ff2828" visible="false">
+                     <font>
+                        <Font name="Work Sans Regular" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox spacing="8.0">
+               <children>
+                  <PasswordField fx:id="password" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="40.0" minWidth="448.0" prefHeight="40.0" prefWidth="448.0" promptText="Enter Password" style="-fx-border-radius: 0; -fx-background-radius: 0;">
+                     <font>
+                        <Font name="Work Sans Medium" size="20.0" />
+                     </font>
+                  </PasswordField>
+                  <Label fx:id="passError" managed="false" text="error text" textFill="#ff2828" visible="false">
+                     <font>
+                        <Font name="Work Sans Regular" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox spacing="8.0">
+               <children>
+                  <PasswordField fx:id="confirmPassword" maxHeight="40.0" maxWidth="448.0" minHeight="40.0" minWidth="-Infinity" prefHeight="40.0" prefWidth="448.0" promptText="Confirm Password" style="-fx-border-radius: 0; -fx-background-radius: 0;">
+                     <font>
+                        <Font name="Work Sans Medium" size="20.0" />
+                     </font>
+                  </PasswordField>
+                  <Label fx:id="confirmError" managed="false" text="error text" textFill="#ff2828" visible="false">
+                     <font>
+                        <Font name="Work Sans Regular" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#showPopup" prefHeight="40.0" prefWidth="200.0" style="-fx-border-radius: 0; -fx-background-radius: 0;" text="Sign Up">
+               <font>
+                  <Font name="Work Sans Medium" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <StackPane fx:id="popupOverlay" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: rgba(0, 0, 0, 0.5);" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox fx:id="popupContainer" alignment="CENTER" visible="false" />
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

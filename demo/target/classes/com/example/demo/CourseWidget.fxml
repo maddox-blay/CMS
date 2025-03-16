@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" prefHeight="119.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.CourseWidget">
+   <children>
+      <VBox id="main" alignment="CENTER" layoutY="21.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#toggleDetails" prefWidth="400.0" spacing="4.0" stylesheets="@CourseWidget.css" AnchorPane.bottomAnchor="0.0">
+         <children>
+            <VBox prefWidth="400.0">
+               <children>
+                  <Label fx:id="courseName" text="course">
+                     <font>
+                        <Font name="Work Sans Medium" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="instructor" text="instructor" textFill="#666661">
+                     <font>
+                        <Font name="Work Sans Regular" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox fx:id="detailsBox" visible="false" managed="false" prefWidth="360.0" spacing="24.0">
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+            </VBox>
+            <HBox alignment="CENTER" prefWidth="360.0" spacing="16.0">
+               <children>
+                  <ProgressBar fx:id="progressBar" focusTraversable="false" prefHeight="8.0" prefWidth="280.0" progress="0.66" />
+                  <Label fx:id="percentage" text="10%">
+                     <font>
+                        <Font name="Work Sans Regular" size="32.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+      
+                              </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+      <StackPane fx:id="removeBubble" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#removeCourse" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: red; -fx-shape: 'M 50,25 a 25,25 0 1,1 -50,0 a 25,25 0 1,1 50,0';" visible="false" AnchorPane.rightAnchor="-15.0" AnchorPane.topAnchor="-15.0">
+         <Label text="✕">
+            <font>
+               <Font name="Work Sans Medium" size="20.0" />
+            </font>
+         </Label>
+      </StackPane>
+   </children>
+</AnchorPane>

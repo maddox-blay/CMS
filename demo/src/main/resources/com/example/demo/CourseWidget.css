@@ -1,0 +1,41 @@
+#main {
+     -fx-background-color: #FFFFF2;
+     -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 1), 0, 0, 2, 2);
+     -fx-border-width: 2px;
+     -fx-border-color: #000000;
+}
+
+
+.progress-bar {
+    -fx-border-color: black;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-background-insets: 0;
+}
+.progress-bar .bar {
+    -fx-background-insets: 0;
+    -fx-background-color: #FFD103;
+
+}
+.progress-bar .track {
+    -fx-background-color:#D9D9D9 ;
+    -fx-background-insets: 0;
+}
+.check-box .box {
+    -fx-background-color: D9D9D9;
+    -fx-background-radius: 300px;
+    -fx-pref-width: 24px;
+    -fx-pref-height: 24px;
+    -fx-min-height: 24px;
+    -fx-min-width: 24px;
+    -fx-background-insets: 0;
+    -fx-effect: null;
+}
+
+.check-box:selected .box {
+    -fx-background-color: #FFD103;
+}
+.check-box:selected .mark {
+    -fx-background-color: transparent;
+}

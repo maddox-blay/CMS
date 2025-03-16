@@ -1,0 +1,41 @@
+.root {
+-fx-background-color: #F5FCE3;
+ }
+.hyperlink {
+ -fx-text-fill: #000000;
+ -fx-underline: false;
+ -fx-focus-traversable: false;
+}
+.hyperlink:hover{
+ -fx-text-fill: #666661;
+}
+.hyperlink:focused {
+-fx-border-width: 0px;
+ }
+
+#logout {
+ -fx-text-fill: #666661;
+}
+#logout:hover{
+-fx-text-fill: #000000;
+}
+.scroll-pane{
+-fx-background: #F5FCE3;
+-fx-background-color: transparent;
+}
+.scroll-bar:vertical, .scroll-bar:horizontal {
+    -fx-background-color: transparent;
+}
+
+
+.scroll-bar:vertical .thumb, .scroll-bar:horizontal .thumb {
+    -fx-background-color: #888888;
+    -fx-background-radius: 5px;
+}
+.scroll-pane .viewport {
+    -fx-font-smoothing-type: lcd;
+}
+
+.increment-button, .decrement-button {
+    -fx-background-color: transparent;
+}

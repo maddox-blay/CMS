@@ -1,0 +1,45 @@
+#main {
+     -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 1), 0, 0, 2, 2);
+     -fx-background-color: #FFFFF2;
+     -fx-border-width: 2px;
+     -fx-border-color: #000000;
+}
+#rnd{
+-fx-background-color: #FFD103;
+-fx-background-insets: 0;
+-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 1), 0, 0, 2, 2);
+-fx-border-width: 2px;
+-fx-border-color: #000000;
+-fx-border-radius: 500;
+-fx-padding: 1px;
+-fx-min-width: 35px;
+-fx-min-height: 35px;
+-fx-max-width: 35px;
+-fx-max-height: 35px;
+-fx-focus-traversable: false;
+
+}
+
+.button{
+-fx-background-color: #FFD103;
+-fx-background-insets: 0;
+-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 1), 0, 0, 2, 2);
+-fx-border-width: 2px;
+-fx-border-color: #000000;
+-fx-focus-traversable: false;
+}
+
+.button:hover, #rnd:hover{
+-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 1), 0, 0, 6, 6);
+-fx-translate-x: -2px;
+-fx-translate-y: -2px;
+}
+.text-field, .password-field{
+
+-fx-background-color: #FFFFF2;
+-fx-background-insets: 0;
+-fx-border-width: 2px;
+-fx-border-color: #000000;
+-fx-focus-traversable: false;
+ -fx-prompt-text-fill: #666661;
+}

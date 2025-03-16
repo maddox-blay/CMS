@@ -1,0 +1,43 @@
+#main {
+     -fx-background-color: #F5FCE3;
+     -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 1), 0, 0, 2, 2);
+     -fx-border-width: 2px;
+     -fx-border-color: #000000;
+}
+
+.root {
+-fx-background-color: #F5FCE3;
+ }
+
+.button{
+-fx-background-color: #FFD103;
+-fx-background-insets: 0;
+-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 1), 0, 0, 2, 2);
+-fx-border-width: 2px;
+-fx-border-color: #000000;
+-fx-focus-traversable: false;
+
+}
+
+.button:hover{
+-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 1), 0, 0, 6, 6);
+-fx-translate-x: -2px;
+-fx-translate-y: -2px;
+}
+.text-field, .password-field{
+
+-fx-background-color: #FFFFF2;
+-fx-background-insets: 0;
+-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 1), 0, 0, 2, 2);
+-fx-border-width: 2px;
+-fx-border-color: #000000;
+-fx-focus-traversable: false;
+ -fx-prompt-text-fill: #666661;
+}
+
+#Yes{
+-fx-background-color: #FF2828;
+}
+#No{
+-fx-background-color: #FFFFF2;
+}
